@@ -36,9 +36,9 @@ stages:
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
-- task: Docker@2
-  inputs:
-    containerRegistry: 'k8scrs'
-    repository: 'azuredevops1'
-    command: 'push'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'k8scrs'
+        repository: 'azuredevops1'
+        command: 'push'
 
