@@ -4,6 +4,6 @@ COPY . .
 RUN npm install
 RUN npm run build --prod
 
-# Stage22
+# Stage222
 FROM nginx:alpine
 COPY --from=node /app/dist/angularapp /usr/share/nginx/html
