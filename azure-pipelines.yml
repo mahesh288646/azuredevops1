@@ -41,5 +41,5 @@ stages:
         containerRegistry: 'k8scrs'
         repository: 'azuredevops1'
         command: 'push'
-        tags: '$(tag)'
+        tags: '$(imageRepository)'
 
